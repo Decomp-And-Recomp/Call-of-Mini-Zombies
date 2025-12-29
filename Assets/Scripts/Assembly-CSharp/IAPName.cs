@@ -1,0 +1,26 @@
+public enum IAPName
+{
+	Cash1 = 0,
+	Cash2 = 1,
+	Cash3 = 2,
+	Cash4 = 3,
+	Cash5 = 4,
+	Cash6 = 5,
+	Crystal1 = 6,
+	Crystal2 = 7,
+	Crystal3 = 8,
+	Crystal4 = 9,
+	Crystal5 = 10,
+	Crystal6 = 11,
+	Exp15 = 12,
+	Exp25 = 13,
+	PaperJoy = 14,
+	PaperJoyRestore = 15,
+	IapDiscountActive = 16,
+	IapDiscountInactive1 = 17,
+	IapDiscountInactive2 = 18,
+	IapDiscountInactive3 = 19,
+	Newbie1 = 20,
+	Newbie2 = 21,
+	None = 22
+}

@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: weapon_gold_fire_05
+  m_Shader: {fileID: 4800000, guid: 3ef65bd0c79a62e4da3a7577f36af6f3, type: 3}
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+    - first:
+        name: _MainTex
+      second:
+        m_Texture: {fileID: 2800000, guid: 910d8191699a99443aadaad231786c4c, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 1, y: 1}
+    m_Floats:
+    - first:
+        name: _Offset
+      second: 1
+    - first:
+        name: _AlphaValue
+      second: -0.0014925387
+    m_Colors:
+    - first:
+        name: _Color
+      second: {r: 1, g: 0.59870064, b: 0.13432837, a: 1}
+    - first:
+        name: _ColorS
+      second: {r: 0.3134328, g: 0.3134328, b: 0.3134328, a: 1}

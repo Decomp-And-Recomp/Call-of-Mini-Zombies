@@ -1,0 +1,79 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  serializedVersion: 2
+  m_ObjectHideFlags: 1
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1775004920909415}
+  m_IsPrefabParent: 1
+  m_IsExploded: 0
+--- !u!1 &1775004920909415
+GameObject:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 4409065289871711}
+  - 114: {fileID: 114038857630164986}
+  m_Layer: 0
+  m_Name: EnemyResourceConfig
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4409065289871711
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1775004920909415}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -6.9805183, y: 0.00016347131, z: -4.3311234}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+--- !u!114 &114038857630164986
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1775004920909415}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 468ecd5594c8641389536dbd5d6de473, type: 3}
+  m_Name:
+  enemy:
+  - {fileID: 1462196688828913, guid: 74c49b3ff451ba147a73d35ba115bbf0, type: 2}
+  - {fileID: 1675613220465049, guid: 001eb9c72a6b1c64b94f1609978e0d3c, type: 2}
+  - {fileID: 1724201382243502, guid: cc8e0f595f7bd0f4da641a9b006cf541, type: 2}
+  - {fileID: 1667313513159653, guid: 526044d61a9ebc744934a4cea1fc8a1b, type: 2}
+  - {fileID: 1565894029570959, guid: 148dbc471f98d004ca6903730e1a81f1, type: 2}
+  - {fileID: 1440970283999692, guid: 0dbfe746df8b66e4e89521e3d08150b6, type: 2}
+  - {fileID: 1234622094986917, guid: e6c05e8376397be4cb70afe8c7e3dbf3, type: 2}
+  - {fileID: 1400267469348574, guid: 93d991596c710d043bd5ea8d28d315e1, type: 2}
+  - {fileID: 1780560178095482, guid: 7724b9e1d32dceb4882d061dccd76d5e, type: 2}
+  enemy_elite:
+  - {fileID: 1085844761243128, guid: 1d68ee2f653f4d841a3acfe1a6167730, type: 2}
+  - {fileID: 1454560347989068, guid: 4c00558689ec4f448b921db84745aeff, type: 2}
+  - {fileID: 1444174538869282, guid: e96bb0b0ee562ca4e98973a61c285334, type: 2}
+  - {fileID: 1534008128534262, guid: 30b71455f87ae2640a904d2b5ff00219, type: 2}
+  - {fileID: 1730163775446769, guid: 58fccd1ee012b5647a96f33cab991fd3, type: 2}
+  - {fileID: 1795752581850880, guid: a1cc41da30e4bbd48956a8932b7002bb, type: 2}
+  - {fileID: 1191830252104056, guid: b7abdd0d650adf94e960b33c79443092, type: 2}
+  - {fileID: 1365422578946129, guid: cfc751b7e117bbd4596e5155ee04b58e, type: 2}
+  - {fileID: 1371626275362704, guid: b93f6fdd7cc087f4b8d926dca514aac3, type: 2}
+  deadbody_zombie: {fileID: 1115956969805913, guid: 79e6eccbf9fc8fb478e8d08b730a29bd, type: 2}
+  deadbody_nurse: {fileID: 1370183782491443, guid: a2f7e6b1575ccdd42a0279789d2f75ff, type: 2}
+  deadbody_boomer: {fileID: 1989869693500437, guid: 075eaaac8d594cf4193b5fb82d6bbfcf, type: 2}
+  deadbody_swat: {fileID: 1282167341250567, guid: 220462d0eb3da1145b9f7991fc2d0561, type: 2}
+  deadhead_zombie: {fileID: 1842099329013991, guid: f21ad573b01eec7419bac40d7fdf62a2, type: 2}
+  deadhead_nurse: {fileID: 1889907762226730, guid: 5878c4f415712444090321df0a27e004, type: 2}
+  deadhead_boomer: {fileID: 1136877639438431, guid: 4b516b88f7795a448baca96315204b41, type: 2}
+  deadhead_swat: {fileID: 1594010164930468, guid: f55821d6c8bd2104b806dd0c6d993b5e, type: 2}

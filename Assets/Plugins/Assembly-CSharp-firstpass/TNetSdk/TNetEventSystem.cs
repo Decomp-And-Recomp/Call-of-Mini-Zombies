@@ -1,0 +1,16 @@
+namespace TNetSdk
+{
+	public enum TNetEventSystem
+	{
+		CONNECTION = 999,
+		DISCONNECT = 998,
+		CONNECTION_KILLED = 997,
+		CONNECTION_TIMEOUT = 996,
+		REVERSE_HEART_TIMEOUT = 995,
+		REVERSE_HEART_WAITING = 994,
+		REVERSE_HEART_RENEW = 993,
+		GetHostAddresses_Error = 992,
+		HEARTBEAT = 2,
+		LOGIN = 4
+	}
+}

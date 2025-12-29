@@ -1,0 +1,133 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Zombie3D/TrinitiUI.unity
+    guid: 0e51e9245520a2245bf726f472d464a4
+  - enabled: 1
+    path: Assets/Scenes/Zombie3D/New/StartMenuTUI.unity
+    guid: 82bc40e0e0c01c849962037a53a465bd
+  - enabled: 1
+    path: Assets/Scenes/Zombie3D/Zombie3D_Tutorial.unity
+    guid: 7259a68398789444fa1861f3a35b7065
+  - enabled: 1
+    path: Assets/Scenes/Zombie3D/Zombie3D_Arena.unity
+    guid: 98359e69b57509c4592ac06d2e35a0b4
+  - enabled: 1
+    path: Assets/Scenes/Zombie3D/Zombie3D_Hospital.unity
+    guid: f2147d92a57ca15419bfc02fab08ee51
+  - enabled: 1
+    path: Assets/Scenes/Zombie3D/Zombie3D_ParkingLot.unity
+    guid: 88d20bd5039601a4e8484df5912270c7
+  - enabled: 1
+    path: Assets/Scenes/Zombie3D/Zombie3D_Village.unity
+    guid: ca5eb49c8ebe45f47a878032d2746b2e
+  - enabled: 1
+    path: Assets/Scenes/Zombie3D/Zombie3D_Church.unity
+    guid: fe724c5cf5cf8c94aaa25ca68dcbaa36
+  - enabled: 1
+    path: Assets/Scenes/Zombie3D/Zombie3D_Village2.unity
+    guid: 3dd189df63ae44345910ce453b1f9cb7
+  - enabled: 1
+    path: Assets/Scenes/Zombie3D/Zombie3D_Recycle.unity
+    guid: a308efbe18b1e8842a95d472fc1beb80
+  - enabled: 1
+    path: Assets/Scenes/Zombie3D/Zombie3D_PowerStation.unity
+    guid: 8954dbcae0e1dda4c8c6389ac4a49365
+  - enabled: 1
+    path: Assets/Scenes/Zombie3D/Zombie3D_PlayGound.unity
+    guid: d3c1406d16aae0a499fa3885eb164b03
+  - enabled: 1
+    path: Assets/Scenes/Zombie3D/New/AvatarShopMenuTUI.unity
+    guid: 37e8aa1d6dad36446a5bb168eab07fa0
+  - enabled: 1
+    path: Assets/Scenes/Zombie3D/New/MainMapTUI.unity
+    guid: ad2ea0a8e7e6a6a44b36fe5753bb9616
+  - enabled: 1
+    path: Assets/Scenes/Zombie3D/New/MultiReportTUI.unity
+    guid: daefc7aefd8404f4b857252b34c8eb8f
+  - enabled: 1
+    path: Assets/Scenes/Zombie3D/New/NickNameTUI.unity
+    guid: 37148795f4ec0594397b8daf976c95a8
+  - enabled: 1
+    path: Assets/Scenes/Zombie3D/New/OptionTUI.unity
+    guid: ae5bc8eac60d3164a8222968e63479fc
+  - enabled: 1
+    path: Assets/Scenes/Zombie3D/New/ShopMenuTUI.unity
+    guid: 24dbc573578272b42a4b85a46e86fff3
+  - enabled: 1
+    path: Assets/Scenes/Zombie3D/New/CreateRoomTUI.unity
+    guid: d3cef5eec58aa5e458c7a0f4906d7db9
+  - enabled: 1
+    path: Assets/Scenes/Zombie3D/New/VSReportTUI.unity
+    guid: aa5ca86af1a14ff418d29f3d6cad3137
+  - enabled: 1
+    path: Assets/Scenes/Zombie3D/New/VSAdTUI.unity
+    guid: 4cce06a073d37564bae9c4acf60dd5c4
+  - enabled: 1
+    path: Assets/Scenes/Zombie3D/New/VSReportTUITemp.unity
+    guid: 04e8a79cc8572cd4da948fa936d797ed
+  - enabled: 1
+    path: Assets/Scenes/Zombie3D/New/AchievementTUI.unity
+    guid: a808732e3b6deaa4f8b3ec3a0ba10bec
+  - enabled: 1
+    path: Assets/Scenes/Zombie3D/New/WeaponShopMenuTUI.unity
+    guid: 77b8b63151fa5464b9275179d07e501b
+  - enabled: 1
+    path: Assets/Scenes/Zombie3D/New/ItemShopMenuTUI.unity
+    guid: 06dbab8f34688be46a1c3d876dfaa599
+  - enabled: 1
+    path: Assets/Scenes/Zombie3D/New/PaperJoyAdTUI.unity
+    guid: 23f01b7c2795bba408d4da086042827e
+  - enabled: 1
+    path: Assets/Scenes/Zombie3D/New/PaperJoyMakeTUI.unity
+    guid: 8e90fb9d2f1f09648b7c04db849771d4
+  - enabled: 1
+    path: Assets/Scenes/Zombie3D/New/VSHallTUI.unity
+    guid: e6fb457eaaf52f0488a6ee3269a17e61
+  - enabled: 1
+    path: Assets/Scenes/Zombie3D/New/RoomTUI.unity
+    guid: 0ee1da6a01b827c42928b1a0fe082942
+  - enabled: 1
+    path: Assets/Scenes/Zombie3D/New/CoopHallTUI.unity
+    guid: 2d1e063e4a3f80940badd44f0314fd9c
+  - enabled: 1
+    path: Assets/Scenes/Zombie3D/New/InstanceReportTUI.unity
+    guid: 58030142ddad1fe42b9eb9b5d4e79e4e
+  - enabled: 1
+    path: Assets/Scenes/Zombie3D/Zombie3D_Desert1.unity
+    guid: 5a6467a8a9caa2543a6be161fb3c404d
+  - enabled: 1
+    path: Assets/Scenes/Zombie3D/Zombie3D_Desert2.unity
+    guid: c5048dc8265ae7b49902761985197b69
+  - enabled: 1
+    path: Assets/Scenes/Zombie3D/Zombie3D_Rock1.unity
+    guid: cc6742b2a7fe8cb4b81e29a90ae95240
+  - enabled: 1
+    path: Assets/Scenes/Zombie3D/Zombie3D_Forest1.unity
+    guid: 48f9d01d346f82c48bf7a77219e03808
+  - enabled: 1
+    path: Assets/Scenes/Zombie3D/Zombie3D_Forest2.unity
+    guid: 0489e11a0a87cd4479739cffa55a822a
+  - enabled: 1
+    path: Assets/Scenes/Zombie3D/Zombie3D_Rock2.unity
+    guid: d0d5a8c80f8d4e9458b7c8c21381c16d
+  - enabled: 1
+    path: Assets/Scenes/Zombie3D/Zombie3D_Forest3.unity
+    guid: d9e9cde945d755c4592cdf6ebdfe5c23
+  - enabled: 1
+    path: Assets/Scenes/Zombie3D/Zombie3D_Rock3.unity
+    guid: 3ea18b75f977e61409a09a16f6364eb2
+  - enabled: 1
+    path: Assets/Scenes/Zombie3D/Zombie3D_Rock4.unity
+    guid: 09e733d3505cef8459d0193c4d03b4cc
+  - enabled: 1
+    path: Assets/Scenes/Zombie3D/Zombie3D_Desert3.unity
+    guid: 1ea7575998dcddc43a04240b59f24ea9
+  - enabled: 1
+    path: Assets/Scenes/Zombie3D/Zombie3D_Village2_3g.unity
+    guid: 00d9fa1c47b0ddc45a05cfecd538e51e

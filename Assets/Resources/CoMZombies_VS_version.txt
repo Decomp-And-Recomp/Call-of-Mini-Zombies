@@ -1,0 +1,23 @@
+[CoMZ]
+Ver = 4.3
+VsDomain = cdnserver.trinitigame.com
+VsStandbyServerIP = 208.109.170.55
+VsServerPort = 9000
+VsGroupIdMin = 2040
+VsGroupIdMax = 2059
+CoopDomain = cdnserver.trinitigame.com
+CoopStandbyServerIP = 208.109.170.55
+CoopGroupIdMin = 30
+CoopServerPort = 6001
+AdLink = 1
+
+TestVer = 4.32
+TestVsDomain = cdnserver.trinitigame.com
+TestVsStandbyServerIP = 208.109.170.55
+TestVsServerPort = 9000
+TestVsGroupIdMin = 2060
+TestVsGroupIdMax = 2079
+TestCoopDomain = cdnserver.trinitigame.com
+TestCoopStandbyServerIP = 208.109.170.55
+TestCoopGroupIdMin = 40
+TestCoopServerPort = 6001

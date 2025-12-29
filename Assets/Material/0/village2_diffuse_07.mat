@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: village2_diffuse_07
+  m_Shader: {fileID: 4800000, guid: 4c1338c5d364f4a4cb0bfd9678e867e8, type: 3}
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+    - first:
+        name: _texBase
+      second:
+        m_Texture: {fileID: 2800000, guid: 32c6f4cc631245447a75b433b93a1d84, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _texLightmap
+      second:
+        m_Texture: {fileID: 2800000, guid: 152de8db6ae9d494c922291ed5ac8569, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _texEffect
+      second:
+        m_Texture: {fileID: 2800000, guid: 854759ca3967432468c60d4aaea9110a, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats: {}
+    m_Colors:
+    - first:
+        name: _Color
+      second: {r: 1, g: 1, b: 1, a: 0.9477342}
