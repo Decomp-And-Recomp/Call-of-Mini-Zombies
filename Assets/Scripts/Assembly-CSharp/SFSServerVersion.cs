@@ -7,10 +7,10 @@ using UnityEngine.Networking;
 
 public class SFSServerVersion : MonoBehaviour
 {
-	enum State { Failed, Done }
+	public enum State { Failed, Done }
 
-	static State stateCoop = State.Failed;
-	static State stateVs = State.Failed;
+	public static State stateCoop = State.Failed;
+	public static State stateVs = State.Failed;
 
 	public string url = "http://account.trinitigame.com/game/callofminizombies/CoMZombies_VS_version.bytes";
 

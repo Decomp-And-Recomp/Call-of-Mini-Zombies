@@ -635,6 +635,7 @@ public class VSHallTUI : MonoBehaviour, TUIHandler
 		}
 		TNetConnection.UnregisterSFSSceneCallbacks();
 		TNetConnection.Disconnect();
+		SFSServerVersion.stateVs = SFSServerVersion.State.Failed;
 	}
 
 	private void CheckServerVersion()
