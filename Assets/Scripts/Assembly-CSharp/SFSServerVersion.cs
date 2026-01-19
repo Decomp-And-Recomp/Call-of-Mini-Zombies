@@ -90,7 +90,7 @@ public class SFSServerVersion : MonoBehaviour
 
 		UnityWebRequest request = new UnityWebRequest(PrivateData.BossRaidDataAddress, "POST");
 
-		byte[] requestData = Encoding.UTF8.GetBytes(T.External.XXTEAUtils.Encrypt("CoMZBossRaid", PrivateData.ServerEncryptionKey));
+		byte[] requestData = Encoding.UTF8.GetBytes(T.External.XXTEAUtils.Encrypt("CoMZBR", PrivateData.ServerEncryptionKey));
 
 		request.uploadHandler = new UploadHandlerRaw(requestData);
 		request.downloadHandler = new DownloadHandlerBuffer();
