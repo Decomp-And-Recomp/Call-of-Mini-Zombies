@@ -360,7 +360,7 @@ namespace Zombie3D
 #else
             const string savePath = "CallMini_New.save";
 #endif
-            Stream stream = ((!isNew) ? File.Open(path + savePath, FileMode.Open) : File.Open(path + "CallMini_New.save", FileMode.Open));
+            Stream stream = ((!isNew) ? File.Open(path + savePath, FileMode.Open) : File.Open(path + savePath, FileMode.Open));
             BinaryReader binaryReader = new BinaryReader(stream);
             string str = binaryReader.ReadString();
             binaryReader.Close();
