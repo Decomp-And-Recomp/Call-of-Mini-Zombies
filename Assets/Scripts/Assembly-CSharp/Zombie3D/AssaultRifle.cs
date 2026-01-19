@@ -71,7 +71,9 @@ namespace Zombie3D
 
 		public override void Fire(float deltaTime)
 		{
-			gunfire.GetComponent<Renderer>().enabled = true;
+			if (gunfire.TryGetComponent(out Renderer gunfireRenderer)) gunfireRenderer.enabled = true;
+			else if (gunfire.TryGetComponent(out ParticleSystem gunfireParticles)) gunfireParticles.Play();
+
 			Ray ray = default(Ray);
 			Vector3 vector = cameraComponent.ScreenToWorldPoint(new Vector3(gameCamera.ReticlePosition.x, (float)Screen.height - gameCamera.ReticlePosition.y, 0.1f));
 			ray = new Ray(cameraTransform.position, vector - cameraTransform.position);
@@ -214,7 +216,8 @@ namespace Zombie3D
 			}
 			if (gunfire != null)
 			{
-				gunfire.GetComponent<Renderer>().enabled = false;
+				if (gunfire.TryGetComponent(out Renderer gunfireRenderer)) gunfireRenderer.enabled = false;
+				else if (gunfire.TryGetComponent(out ParticleSystem gunfireParticles)) gunfireParticles.Stop();
 			}
 			if (curEnemyInfo != null)
 			{

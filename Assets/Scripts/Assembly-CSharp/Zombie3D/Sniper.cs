@@ -223,7 +223,7 @@ namespace Zombie3D
 					bool flag3 = false;
 					foreach (NearestEnemyInfo nearestEnemyInfo6 in nearestEnemyInfoList)
 					{
-						if (transform.GetChildCount() > 0)
+						if (transform.childCount > 0)
 						{
 							flag3 = true;
 						}

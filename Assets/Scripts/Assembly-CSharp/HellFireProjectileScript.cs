@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 using Zombie3D;
 
@@ -36,7 +37,7 @@ public class HellFireProjectileScript : MonoBehaviour
 		return false;
 	}
 
-	private void OnParticleCollision(GameObject other)
+    private void OnParticleCollision(GameObject other)
 	{
 		weapon = this.player.GetWeapon();
 		if (other.gameObject.layer == 9)

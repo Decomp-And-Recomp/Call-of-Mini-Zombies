@@ -140,7 +140,8 @@ namespace Zombie3D
 			}
 			if (gunfire != null)
 			{
-				gunfire.GetComponent<Renderer>().enabled = false;
+				if (gunfire.TryGetComponent(out Renderer gunfireRenderer)) gunfireRenderer.enabled = false;
+				else if (gunfire.TryGetComponent(out ParticleSystem gunfireParticles)) gunfireParticles.Stop();
 			}
 		}
 

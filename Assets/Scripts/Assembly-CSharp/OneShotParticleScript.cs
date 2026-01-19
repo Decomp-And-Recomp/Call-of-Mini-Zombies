@@ -5,8 +5,9 @@ public class OneShotParticleScript : MonoBehaviour
 {
 	private IEnumerator Start()
 	{
-		yield return new WaitForSeconds(base.GetComponent<ParticleEmitter>().minEnergy / 2f);
-		base.GetComponent<ParticleEmitter>().emit = false;
+		var main = base.GetComponent<ParticleSystem>().main;
+		yield return new WaitForSeconds(main.startLifetime.constant / 2f);
+		base.GetComponent<ParticleSystem>().Stop(true);
 	}
 
 	private void Update()

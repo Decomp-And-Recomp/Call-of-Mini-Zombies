@@ -10,11 +10,11 @@ namespace Zombie3D
 
 		protected float lastLaserHitInitiatTime;
 
-		protected ParticleEmitter FireDream;
+		protected ParticleSystem FireDream;
 
-		protected ParticleEmitter FireHeart1;
+		protected ParticleSystem FireHeart1;
 
-		protected ParticleEmitter FireHeart2;
+		protected ParticleSystem FireHeart2;
 
 		public MultiFireGun()
 		{
@@ -29,11 +29,11 @@ namespace Zombie3D
 			gunfire = gun.transform.Find("gun_fire_new").gameObject;
 			GameObject gameObject = gun.transform.Find("gun_fire_new/hellfire/hellfire_01").gameObject;
 			gameObject.GetComponent<HellFireProjectileScript>().SetPlayer(player);
-			FireDream = gameObject.GetComponent<ParticleEmitter>();
+			FireDream = gameObject.GetComponent<ParticleSystem>();
 			gameObject = gun.transform.Find("gun_fire_new/hellfire/hellfire_02").gameObject;
-			FireHeart1 = gameObject.GetComponent<ParticleEmitter>();
+			FireHeart1 = gameObject.GetComponent<ParticleSystem>();
 			gameObject = gun.transform.Find("gun_fire_new/hellfire/hellfire_03").gameObject;
-			FireHeart2 = gameObject.GetComponent<ParticleEmitter>();
+			FireHeart2 = gameObject.GetComponent<ParticleSystem>();
 			fire_ori = gun.transform.Find("fire_ori").gameObject;
 			EnableFire(false);
 		}
@@ -42,15 +42,18 @@ namespace Zombie3D
 		{
 			if (FireDream != null)
 			{
-				FireDream.emit = status;
+				if (status) FireDream.Play(true);
+				else FireDream.Stop(true);
 			}
 			if (FireHeart1 != null)
 			{
-				FireHeart1.emit = status;
+				if (status) FireHeart1.Play(true);
+				else FireHeart1.Stop(true);
 			}
 			if (FireHeart2 != null)
 			{
-				FireHeart2.emit = status;
+				if (status) FireHeart2.Play(true);
+				else FireHeart2.Stop(true);
 			}
 		}
 
@@ -75,7 +78,7 @@ namespace Zombie3D
 
 		public override void FireUpdate(float deltaTime)
 		{
-			if (!FireDream.emit)
+			if (!FireDream.isPlaying)
 			{
 				return;
 			}

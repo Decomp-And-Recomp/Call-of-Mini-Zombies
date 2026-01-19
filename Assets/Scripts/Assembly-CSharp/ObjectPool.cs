@@ -13,7 +13,7 @@ public class ObjectPool
 
 	protected bool hasAnimation;
 
-	protected bool hasParticleEmitter;
+	protected bool hasParticleSystem;
 
 	protected GameObject folderObject;
 
@@ -34,9 +34,9 @@ public class ObjectPool
 			{
 				hasAnimation = true;
 			}
-			if (gameObject.GetComponent<ParticleEmitter>() != null)
+			if (gameObject.GetComponent<ParticleSystem>() != null)
 			{
-				hasParticleEmitter = true;
+				hasParticleSystem = true;
 			}
 			gameObject.SetActive(false);
 		}
@@ -66,9 +66,9 @@ public class ObjectPool
 		{
 			hasAnimation = true;
 		}
-		if (gameObject.GetComponent<ParticleEmitter>() != null)
+		if (gameObject.GetComponent<ParticleSystem>() != null)
 		{
-			hasParticleEmitter = true;
+			hasParticleSystem = true;
 		}
 		gameObject.SetActive(true);
 		return gameObject;
@@ -98,9 +98,9 @@ public class ObjectPool
 		{
 			hasAnimation = true;
 		}
-		if (gameObject.GetComponent<ParticleEmitter>() != null)
+		if (gameObject.GetComponent<ParticleSystem>() != null)
 		{
-			hasParticleEmitter = true;
+			hasParticleSystem = true;
 		}
 		gameObject.SetActive(true);
 		return gameObject;

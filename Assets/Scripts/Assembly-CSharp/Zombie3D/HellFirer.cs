@@ -10,11 +10,11 @@ namespace Zombie3D
 
 		protected GameObject Hell_Fire;
 
-		protected ParticleEmitter FireDream;
+		protected ParticleSystem FireDream;
 
-		protected ParticleEmitter FireHeart1;
+		protected ParticleSystem FireHeart1;
 
-		protected ParticleEmitter FireHeart2;
+		protected ParticleSystem FireHeart2;
 
 		public override void Init(GameObject gObject)
 		{
@@ -32,11 +32,11 @@ namespace Zombie3D
 			Hell_Fire = enemyTransform.Find("Bip01/Bip01 Pelvis/Bip01 Spine/Bip01 Spine1/Bip01 Neck/Bip01 R Clavicle/Bip01 R UpperArm/Bip01 R Forearm/Bip01 R Hand/Weapon_Dummy/FireGun").gameObject;
 			GameObject gameObject = Hell_Fire.transform.Find("gun_fire_new/hellfire/hellfire_01").gameObject;
 			gameObject.GetComponent<HellFireEnemyScript>().damage = mAttributes.AttackDamage;
-			FireDream = gameObject.GetComponent<ParticleEmitter>();
+			FireDream = gameObject.GetComponent<ParticleSystem>();
 			gameObject = Hell_Fire.transform.Find("gun_fire_new/hellfire/hellfire_02").gameObject;
-			FireHeart1 = gameObject.GetComponent<ParticleEmitter>();
+			FireHeart1 = gameObject.GetComponent<ParticleSystem>();
 			gameObject = Hell_Fire.transform.Find("gun_fire_new/hellfire/hellfire_03").gameObject;
-			FireHeart2 = gameObject.GetComponent<ParticleEmitter>();
+			FireHeart2 = gameObject.GetComponent<ParticleSystem>();
 		}
 
 		public override void OnAttack()
@@ -57,16 +57,16 @@ namespace Zombie3D
 		public void Fire()
 		{
 			enemyTransform.LookAt(player.GetTransform());
-			FireDream.emit = true;
-			FireHeart1.emit = true;
-			FireHeart2.emit = true;
+			FireDream.Play(true);
+			FireHeart1.Play(true);
+			FireHeart2.Play(true);
 		}
 
 		public void StopFire()
 		{
-			FireDream.emit = false;
-			FireHeart1.emit = false;
-			FireHeart2.emit = false;
+			FireDream.Stop(true);
+			FireHeart1.Stop(true);
+			FireHeart2.Stop(true);
 		}
 
 		public override void Animate(string animationName, WrapMode wrapMode)

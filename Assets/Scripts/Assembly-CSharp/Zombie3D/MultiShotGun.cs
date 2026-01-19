@@ -42,7 +42,8 @@ namespace Zombie3D
 			{
 				if (gunfire != null)
 				{
-					gunfire.GetComponent<Renderer>().enabled = false;
+					if (gunfire.TryGetComponent(out Renderer gunfireRenderer)) gunfireRenderer.enabled = false;
+					else if (gunfire.TryGetComponent(out ParticleSystem gunfireParticles)) gunfireParticles.Stop();
 				}
 				shotgunFireTimer.Do();
 			}
@@ -56,7 +57,8 @@ namespace Zombie3D
 				gun.GetComponent<Animation>()["Reload"].wrapMode = WrapMode.Once;
 				gun.GetComponent<Animation>().Play("Reload");
 			}
-			gunfire.GetComponent<Renderer>().enabled = true;
+			if (gunfire.TryGetComponent(out Renderer gunfireRenderer)) gunfireRenderer.enabled = true;
+			else if (gunfire.TryGetComponent(out ParticleSystem gunfireParticles)) gunfireParticles.Play();
 			shotgunFireTimer.SetTimer(0.2f, false);
 			UnityEngine.Object.Instantiate(rConf.shotgunBullet, rightGun.position, player.GetTransform().rotation);
 			GameObject gameObject = UnityEngine.Object.Instantiate(rConf.shotgunfire, gunfire.transform.position, player.GetTransform().rotation) as GameObject;
@@ -129,7 +131,8 @@ namespace Zombie3D
 		{
 			if (gunfire != null)
 			{
-				gunfire.GetComponent<Renderer>().enabled = false;
+				if (gunfire.TryGetComponent(out Renderer gunfireRenderer)) gunfireRenderer.enabled = false;
+				else if (gunfire.TryGetComponent(out ParticleSystem gunfireParticles)) gunfireParticles.Stop();
 			}
 		}
 

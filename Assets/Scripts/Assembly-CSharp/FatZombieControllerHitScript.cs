@@ -11,7 +11,7 @@ public class FatZombieControllerHitScript : MonoBehaviour
 			{
 				float num = 20f;
 				Vector3 vector = new Vector3(hit.moveDirection.x, 0f, hit.moveDirection.z);
-				attachedRigidbody.velocity = vector * num;
+				attachedRigidbody.linearVelocity = vector * num;
 			}
 		}
 	}

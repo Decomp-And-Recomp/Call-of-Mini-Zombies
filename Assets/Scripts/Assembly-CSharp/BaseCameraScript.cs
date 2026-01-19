@@ -106,7 +106,7 @@ public abstract class BaseCameraScript : MonoBehaviour
 		cameraDistanceFromPlayer.x = Mathf.Lerp(cameraDistanceFromPlayer.x, cameraDistanceFromPlayerWhenAimed.x, deltaTime * 10f);
 		cameraDistanceFromPlayer.y = Mathf.Lerp(cameraDistanceFromPlayer.y, cameraDistanceFromPlayerWhenAimed.y, deltaTime * 10f);
 		cameraDistanceFromPlayer.z = Mathf.Lerp(cameraDistanceFromPlayer.z, cameraDistanceFromPlayerWhenAimed.z, deltaTime * 10f);
-		base.GetComponent<Camera>().fov = Mathf.Lerp(base.GetComponent<Camera>().fov, CAMERA_AIM_FOV, deltaTime * 10f);
+		base.GetComponent<Camera>().fieldOfView = Mathf.Lerp(base.GetComponent<Camera>().fieldOfView, CAMERA_AIM_FOV, deltaTime * 10f);
 	}
 
 	public virtual void ZoomOut(float deltaTime)
@@ -114,6 +114,6 @@ public abstract class BaseCameraScript : MonoBehaviour
 		cameraDistanceFromPlayer.x = Mathf.Lerp(cameraDistanceFromPlayer.x, cameraDistanceFromPlayerWhenIdle.x, deltaTime * 10f);
 		cameraDistanceFromPlayer.y = Mathf.Lerp(cameraDistanceFromPlayer.y, cameraDistanceFromPlayerWhenIdle.y, deltaTime * 10f);
 		cameraDistanceFromPlayer.z = Mathf.Lerp(cameraDistanceFromPlayer.z, cameraDistanceFromPlayerWhenIdle.z, deltaTime * 10f);
-		base.GetComponent<Camera>().fov = Mathf.Lerp(base.GetComponent<Camera>().fov, CAMERA_NORMAL_FOV, deltaTime * 10f);
+		base.GetComponent<Camera>().fieldOfView = Mathf.Lerp(base.GetComponent<Camera>().fieldOfView, CAMERA_NORMAL_FOV, deltaTime * 10f);
 	}
 }

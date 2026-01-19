@@ -26,7 +26,7 @@ public class ControllerHitScript : MonoBehaviour
 			{
 				float num = 2f;
 				Vector3 vector = new Vector3(hit.moveDirection.z, hit.moveDirection.y, hit.moveDirection.x);
-				attachedRigidbody.velocity = vector * num;
+				attachedRigidbody.linearVelocity = vector * num;
 			}
 		}
 	}

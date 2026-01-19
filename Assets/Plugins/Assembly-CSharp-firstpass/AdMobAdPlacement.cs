@@ -1,6 +1,5 @@
 using UnityEngine;
 
-[SerializeField]
 public enum AdMobAdPlacement
 {
 	TopLeft = 0,

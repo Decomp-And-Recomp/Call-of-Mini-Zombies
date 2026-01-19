@@ -81,7 +81,7 @@ public class ScaleScroller : MonoBehaviour
 			selected_item.transform.localPosition = new Vector3(selected_item.transform.localPosition.x, selected_item.transform.localPosition.y, tar_transform.transform.position.z - 1f);
 			selected_item.GetComponent<TUIMeshSprite>().color_Accessor = new Color(1f, 1f, 1f, 1f);
 			selected_item.transform.localScale = new Vector3(1f, 1f, 1f);
-			for (int i = 0; i < selected_item.transform.GetChildCount(); i++)
+			for (int i = 0; i < selected_item.transform.childCount; i++)
 			{
 				if ((bool)selected_item.transform.GetChild(i).gameObject.GetComponent<TUIMeshSprite>())
 				{
@@ -103,7 +103,7 @@ public class ScaleScroller : MonoBehaviour
 				gameObject.GetComponent<TUIMeshSprite>().color_Accessor = new Color(0.3f, 0.3f, 0.3f, 1f);
 				num3 = Mathf.Abs(gameObject.transform.position.y - tar_transform.transform.position.y) / 300f;
 				gameObject.transform.localScale = new Vector3(1f - num3, 1f - num3, 1f);
-				for (int k = 0; k < gameObject.transform.GetChildCount(); k++)
+				for (int k = 0; k < gameObject.transform.childCount; k++)
 				{
 					if ((bool)gameObject.transform.GetChild(k).gameObject.GetComponent<TUIMeshSprite>())
 					{

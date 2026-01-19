@@ -17,7 +17,7 @@ public class CrossbowExplosionScript : MonoBehaviour
 
 	private bool isEmit;
 
-	private ParticleEmitter[] particles;
+	private ParticleSystem[] particles;
 
 	private bool isFollowOject;
 
@@ -25,10 +25,11 @@ public class CrossbowExplosionScript : MonoBehaviour
 
 	private void Awake()
 	{
-		particles = base.transform.GetComponentsInChildren<ParticleEmitter>();
+		particles = base.transform.GetComponentsInChildren<ParticleSystem>();
 		for (int i = 0; i < particles.Length; i++)
 		{
-			particles[i].emit = false;
+			var e = particles[i].emission;
+			e.enabled = false;
 		}
 	}
 
@@ -121,7 +122,7 @@ public class CrossbowExplosionScript : MonoBehaviour
 		base.GetComponent<AudioSource>().Play();
 		for (int i = 0; i < particles.Length; i++)
 		{
-			particles[i].emit = true;
+			particles[i].Stop();
 		}
 		isEmit = true;
 		base.gameObject.AddComponent<RemoveTimerScript>().life = 2f;

@@ -1446,7 +1446,6 @@ namespace Zombie3D
 			weapon.Init();
 			weapon.IsSelectedForBattle = true;
 			weaponList.Add(weapon);
-			playerObject.GetComponent<NetworkView>().RPC("RPCAddVSWeapon", RPCMode.Others, type);
 			NextWeapon();
 			return true;
 		}

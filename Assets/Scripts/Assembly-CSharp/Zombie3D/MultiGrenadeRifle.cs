@@ -8,7 +8,7 @@ namespace Zombie3D
 
 		protected float rocketFlySpeed;
 
-		private ParticleEmitter m32Spark;
+		private ParticleSystem m32Spark;
 
 		private ParticleSystem longinusSpark;
 
@@ -36,8 +36,8 @@ namespace Zombie3D
 			fire_ori = gun.transform.Find("fire_ori").gameObject;
 			if (base.Name == "M32")
 			{
-				m32Spark = gun.transform.Find("GunSpark").GetComponent<ParticleEmitter>();
-				m32Spark.emit = false;
+				m32Spark = gun.transform.Find("GunSpark").GetComponent<ParticleSystem>();
+				m32Spark.Stop(true);
 			}
 			else if (base.Name == "Longinus-Silver")
 			{
@@ -72,7 +72,7 @@ namespace Zombie3D
 			}
 			if (base.Name == "M32")
 			{
-				m32Spark.emit = true;
+				m32Spark.Play(true);
 			}
 			else if (base.Name == "Longinus-Silver")
 			{
@@ -102,7 +102,7 @@ namespace Zombie3D
 		{
 			if (m32Spark != null)
 			{
-				m32Spark.emit = false;
+				m32Spark.Play(true);
 			}
 			if (longinusSpark != null)
 			{
